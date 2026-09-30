@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/github/license/phranck/kicad-plugins?style=flat&color=e53935&label=license)](https://layered.mit-license.org)
 [![last commit](https://img.shields.io/github/last-commit/phranck/kicad-plugins?style=flat&color=fb8c00&label=last%20commit)](https://github.com/phranck/kicad-plugins/commits/main)
 [![code size](https://img.shields.io/github/languages/code-size/phranck/kicad-plugins?style=flat&color=f9a825&label=code%20size)](https://github.com/phranck/kicad-plugins)
-[![language](https://img.shields.io/github/languages/top/phranck/kicad-plugins?style=flat&color=43a047&label=language)](https://github.com/phranck/kicad-plugins)
+[![language](https://img.shields.io/github/languages/top/phranck/kicad-plugins?style=flat&color=43a047)](https://github.com/phranck/kicad-plugins)
 [![issues](https://img.shields.io/github/issues/phranck/kicad-plugins?style=flat&color=1e88e5&label=issues)](https://github.com/phranck/kicad-plugins/issues)
 [![stars](https://img.shields.io/github/stars/phranck/kicad-plugins?style=flat&color=8e24aa&label=stars)](https://github.com/phranck/kicad-plugins)
 
