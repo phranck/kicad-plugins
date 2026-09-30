@@ -19,7 +19,7 @@ Action plugins for the KiCad PCB editor. Each one lives in its own folder with i
 
 | Plugin | What it does |
 |---|---|
-| [GridRef](gridref) | Draws a lettered and numbered grid around the board, so a position has a name instead of a millimetre coordinate |
+| [GridRef](gridref) | Draws a lettered and numbered grid around the board, so a position has a name instead of a millimeter coordinate |
 
 ## Installation
 

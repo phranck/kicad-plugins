@@ -1,6 +1,6 @@
 """Draw a map-reference grid around the board, so a position can be named.
 
-Finding a spot on a board by millimetre coordinates means reading the cursor
+Finding a spot on a board by millimeter coordinates means reading the cursor
 readout and hunting. A lettered and numbered grid turns that into "the island
 is on E9", which is one glance. The grid is drawn on a user layer, so it never
 reaches the fabricator, and it is collected in a named group so the same button
@@ -268,7 +268,7 @@ class GridRefPlugin(pcbnew.ActionPlugin):
         self.description = ("Zeichnet ein beschriftetes Raster um das Board, "
                             "damit sich Stellen benennen lassen")
         self.show_toolbar_button = True
-        # Two icons, because one set of colours cannot serve both toolbars: dark
+        # Two icons, because one set of colors cannot serve both toolbars: dark
         # lines vanish on a dark toolbar and light ones vanish on a light one.
         here = os.path.dirname(os.path.abspath(__file__))
         self.icon_file_name = os.path.join(here, "icon.png")

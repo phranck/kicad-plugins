@@ -13,7 +13,7 @@
 
 # GridRef
 
-Draws a lettered and numbered grid around the board, the way a street map does. Instead of reading a millimetre coordinate off the cursor and hunting for it, a position has a name: the unconnected copper island is on **E9**, the regulator is on **C22**.
+Draws a lettered and numbered grid around the board, the way a street map does. Instead of reading a millimeter coordinate off the cursor and hunting for it, a position has a name: the unconnected copper island is on **E9**, the regulator is on **C22**.
 
 Columns carry numbers and run left to right, rows carry letters and run top to bottom. Rows continue past Z as AA, AB and so on, so a tall board keeps working.
 
@@ -35,9 +35,9 @@ The grid is drawn on a user layer, so it never reaches the fabricator. Everythin
 
 Settings are written to `~/.config/kicad-plugins/gridref.json`, so they carry over to the next project.
 
-## Colour
+## Color
 
-The colour comes from the layer, not from the objects, because a KiCad board file has no colour field on a line or a piece of text. Set it in the PCB editor's Appearance panel on the right, by double-clicking the colour swatch next to the layer. Picking a different layer in the dialog is therefore also a way of picking a different colour, since each user layer carries its own.
+The color comes from the layer, not from the objects, because a KiCad board file has no color field on a line or a piece of text. Set it in the PCB editor's Appearance panel on the right, by double-clicking the color swatch next to the layer. Picking a different layer in the dialog is therefore also a way of picking a different color, since each user layer carries its own.
 
 ## Installation
 
