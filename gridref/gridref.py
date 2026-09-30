@@ -268,9 +268,11 @@ class GridRefPlugin(pcbnew.ActionPlugin):
         self.description = ("Zeichnet ein beschriftetes Raster um das Board, "
                             "damit sich Stellen benennen lassen")
         self.show_toolbar_button = True
-        self.icon_file_name = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                           "icon.png")
-        self.dark_icon_file_name = self.icon_file_name
+        # Two icons, because one set of colours cannot serve both toolbars: dark
+        # lines vanish on a dark toolbar and light ones vanish on a light one.
+        here = os.path.dirname(os.path.abspath(__file__))
+        self.icon_file_name = os.path.join(here, "icon.png")
+        self.dark_icon_file_name = os.path.join(here, "icon_dark.png")
 
     def Run(self):
         board = pcbnew.GetBoard()
