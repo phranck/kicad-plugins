@@ -7,7 +7,7 @@
 [![issues](https://img.shields.io/github/issues/phranck/kicad-plugins?style=flat&color=1e88e5&label=issues)](https://github.com/phranck/kicad-plugins/issues)
 [![stars](https://img.shields.io/github/stars/phranck/kicad-plugins?style=flat&color=8e24aa&label=stars)](https://github.com/phranck/kicad-plugins)
 
-<img src="media/hero.png" alt="A board with the map-reference grid drawn over it, numbered 1 to 30 across and lettered A to L down" width="860">
+<img src="media/hero.png" alt="KiCad Plugins, action plugins for the KiCad PCB editor" width="860">
 
 </div>
 
@@ -16,6 +16,8 @@
 Action plugins for the KiCad PCB editor. Each one lives in its own folder and installs on its own, so you can take the one you want and ignore the rest.
 
 ## GridRef
+
+<img src="media/gridref.png" alt="A board with the map-reference grid drawn over it, numbered 1 to 30 across and lettered A to L down" width="860">
 
 Draws a lettered and numbered grid around the board, the way a street map does. Instead of reading a millimetre coordinate off the cursor and hunting for it, a position has a name: the unconnected copper island is on **E9**, the regulator is on **C22**.
 
