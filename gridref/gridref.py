@@ -92,13 +92,10 @@ def remove_grid(board):
     """Remove only what this plugin drew, by way of its group."""
     group = find_group(board)
     if group is None:
-        return 0
-    removed = 0
+        return
     for item in list(group.GetItems()):
         board.Remove(item)
-        removed += 1
     board.Remove(group)
-    return removed
 
 
 def draw_grid(board, cfg):
@@ -176,8 +173,6 @@ def draw_grid(board, cfg):
                 label(row_label(index), x0 - margin, middle)
             if cfg["labels_right"]:
                 label(row_label(index), x1 + margin, middle)
-
-    return columns, rows
 
 
 class GridRefDialog(wx.Dialog):
@@ -283,9 +278,8 @@ class GridRefPlugin(pcbnew.ActionPlugin):
             if answer == wx.ID_CANCEL:
                 return
             if answer == wx.ID_DELETE:
-                removed = remove_grid(board)
+                remove_grid(board)
                 pcbnew.Refresh()
-                wx.MessageBox("%d Objekte entfernt." % removed, "Planquadrat-Raster")
                 return
             cfg = dialog.values()
         finally:
@@ -296,14 +290,11 @@ class GridRefPlugin(pcbnew.ActionPlugin):
         # twice with a different cell size without leaving the first grid behind.
         remove_grid(board)
         try:
-            columns, rows = draw_grid(board, cfg)
+            draw_grid(board, cfg)
         except ValueError as error:
             wx.MessageBox(str(error), "Planquadrat-Raster", wx.ICON_ERROR)
             return
         pcbnew.Refresh()
-        wx.MessageBox("Raster gezeichnet: %d Spalten (1 bis %s), %d Zeilen (A bis %s)."
-                      % (columns, column_label(columns - 1), rows, row_label(rows - 1)),
-                      "Planquadrat-Raster")
 
 
 GridRefPlugin().register()
